@@ -108,3 +108,36 @@ h2 {
         text-align: center;
     }
 }
+.knowledge-domains ul,
+.tools-technologies ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.knowledge-domains li,
+.tools-technologies li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.knowledge-domains i,
+.tools-technologies i {
+    margin-right: 10px;
+    color: var(--accent-color);
+    width: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .knowledge-domains ul,
+    .tools-technologies ul {
+        grid-template-columns: 1fr;
+    }
+}
