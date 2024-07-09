@@ -57,12 +57,13 @@ h2 {
 }
 
 .button-grid {
+    list-style-type: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 
-.button {
+.button-grid li {
     background-color: var(--button-background);
     padding: 15px;
     border-radius: 8px;
@@ -72,12 +73,12 @@ h2 {
     cursor: pointer;
 }
 
-.button:hover {
+.button-grid li:hover {
     transform: translateY(-5px);
     background-color: var(--accent-color);
 }
 
-.button i {
+.button-grid li i {
     margin-right: 10px;
     width: 20px;
     text-align: center;
