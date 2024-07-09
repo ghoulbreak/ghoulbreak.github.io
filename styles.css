@@ -4,7 +4,8 @@
     --secondary-color: #86868b;
     --accent-color: #2997ff;
     --hover-color: #0071e3;
-    --button-background: rgba(255, 255, 255, 0.1);
+    --button-background: rgba(255, 255, 255, 0.05);
+    --button-border: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -68,19 +69,46 @@ h2 {
     border-radius: 8px;
     display: flex;
     align-items: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
+    border: 1px solid var(--button-border);
+    position: relative;
+    overflow: hidden;
+}
+
+.button-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
 .button-item:hover {
     transform: translateY(-5px);
-    background-color: var(--accent-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-item:hover:before {
+    opacity: 0.1;
 }
 
 .button-item i {
     margin-right: 10px;
     width: 20px;
     text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.button-item span {
+    position: relative;
+    z-index: 2;
 }
 
 .links {
