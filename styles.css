@@ -14,7 +14,7 @@ body {
 main {
     text-align: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     padding: 20px;
 }
 
@@ -32,38 +32,38 @@ h1 {
 .card {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
 }
 
 .content {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .ascii-art {
     font-size: 1rem;
     white-space: pre;
     line-height: 1;
+    width: 100%;
 }
 
-.profile-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+.profile-picture {
+    margin-bottom: 20px;
 }
 
 .profile-picture img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .links {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+    gap: 20px;
+    justify-content: center;
 }
 
 a {
@@ -78,6 +78,10 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
     h1 {
         font-size: 1.5rem;
     }
@@ -88,18 +92,8 @@ a:hover {
     }
 
     .profile-picture img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .profile-section {
-        flex-direction: column;
-    }
-
-    .links {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
+        width: 150px;
+        height: 150px;
     }
 
     .ascii-art {
