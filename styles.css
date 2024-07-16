@@ -18,16 +18,6 @@ main {
     padding: 20px;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-.content {
-    padding: 0 20px;
-}
-
 h1 {
     font-size: 2rem;
     font-weight: 700;
@@ -36,7 +26,17 @@ h1 {
 
 .occupation {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.content {
+    padding: 20px;
 }
 
 .ascii-art {
@@ -50,7 +50,6 @@ h1 {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    margin: 20px 0;
 }
 
 .profile-picture img {
@@ -85,6 +84,7 @@ a:hover {
 
     .occupation {
         font-size: 0.9rem;
+        margin-bottom: 1.5rem;
     }
 
     .profile-picture img {
