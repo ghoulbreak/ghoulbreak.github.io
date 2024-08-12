@@ -4,8 +4,8 @@
     --background-color: #000;
     --text-color: #f5f5f7;
     --secondary-text-color: #86868b;
-    --card-background: rgba(255, 255, 255, 0.1);
-    --card-border: rgba(255, 255, 255, 0.2);
+    --card-background: #1c1c1e;
+    --card-border: #2c2c2e;
 }
 
 body {
@@ -59,11 +59,20 @@ h2 {
     border-radius: 8px;
     transition: all 0.3s ease;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .grid li:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--primary-color);
     transform: translateY(-5px);
+}
+
+.grid li i {
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 
 .links {
