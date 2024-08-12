@@ -5,59 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William R. French - Cyber Security Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <main class="container">
+    <div class="container">
         <header>
             <h1>William R. French</h1>
             <p class="tagline">Cyber Security Engineer | Automation Specialist | AI Enthusiast</p>
         </header>
 
         <section class="connect">
-            <h2 class="section-title">Connect</h2>
+            <h2>Connect</h2>
             <div class="links">
-                <a href="https://www.linkedin.com/in/w1ll1am-ray-fr3nch/" class="link-item">
-                    <i class="fab fa-linkedin"></i> LinkedIn
+                <a href="https://www.linkedin.com/in/w1ll1am-ray-fr3nch/" class="button">
+                    <i data-feather="linkedin"></i> LinkedIn
                 </a>
-                <a href="https://github.com/ghoulbreak" class="link-item">
-                    <i class="fab fa-github"></i> GitHub
+                <a href="https://github.com/ghoulbreak" class="button">
+                    <i data-feather="github"></i> GitHub
                 </a>
             </div>
         </section>
 
         <section class="knowledge-domains">
-            <h2 class="section-title">Knowledge Domains</h2>
-            <ul class="grid">
-                <li><i class="fas fa-shield-alt"></i><span>Threat Intelligence</span></li>
-                <li><i class="fas fa-robot"></i><span>Security Automation</span></li>
-                <li><i class="fas fa-cloud"></i><span>Cloud & Infrastructure Security</span></li>
-                <li><i class="fas fa-user-lock"></i><span>Identity & Access Management</span></li>
-                <li><i class="fas fa-chart-line"></i><span>Security Event Management</span></li>
-                <li><i class="fas fa-clipboard-check"></i><span>Compliance & Risk Management</span></li>
-            </ul>
+            <h2>Knowledge Domains</h2>
+            <div class="grid">
+                <div class="card">
+                    <i data-feather="shield"></i>
+                    <span>Threat Intelligence</span>
+                </div>
+                <div class="card">
+                    <i data-feather="cpu"></i>
+                    <span>Security Automation</span>
+                </div>
+                <div class="card">
+                    <i data-feather="cloud"></i>
+                    <span>Cloud & Infrastructure Security</span>
+                </div>
+                <div class="card">
+                    <i data-feather="lock"></i>
+                    <span>Identity & Access Management</span>
+                </div>
+                <div class="card">
+                    <i data-feather="activity"></i>
+                    <span>Security Event Management</span>
+                </div>
+                <div class="card">
+                    <i data-feather="clipboard"></i>
+                    <span>Compliance & Risk Management</span>
+                </div>
+            </div>
         </section>
 
         <section class="tools-technologies">
-            <h2 class="section-title">Tools, Platforms, Frameworks, Etc.</h2>
-            <ul class="grid">
-                <li><i class="fab fa-python"></i><span>Python</span></li>
-                <li><i class="fab fa-linux"></i><span>Linux</span></li>
-                <li><i class="fas fa-infinity"></i><span>CI/CD</span></li>
-                <li><i class="fas fa-database"></i><span>Splunk Enterprise Security</span></li>
-                <li><i class="fas fa-robot"></i><span>Splunk SOAR (Phantom)</span></li>
-                <li><i class="fab fa-aws"></i><span>AWS</span></li>
-                <li><i class="fas fa-cubes"></i><span>Terraform</span></li>
-                <li><i class="fas fa-link"></i><span>LangChain</span></li>
-                <li><i class="fas fa-cogs"></i><span>ServiceNow</span></li>
-                <li><i class="fab fa-docker"></i><span>Docker</span></li>
-                <li><i class="fab fa-gitlab"></i><span>GitLab</span></li>
-                <li><i class="fab fa-github"></i><span>GitHub</span></li>
-                <li><i class="fas fa-crow"></i><span>Crowdstrike</span></li>
-                <li><i class="fas fa-shield-alt"></i><span>Venafi</span></li>
-                <li><i class="fas fa-sitemap"></i><span>MITRE ATT&CK Framework</span></li>
-            </ul>
+            <h2>Tools, Platforms, Frameworks, Etc.</h2>
+            <div class="grid">
+                <div class="card"><i data-feather="code"></i><span>Python</span></div>
+                <div class="card"><i data-feather="terminal"></i><span>Linux</span></div>
+                <div class="card"><i data-feather="refresh-cw"></i><span>CI/CD</span></div>
+                <div class="card"><i data-feather="database"></i><span>Splunk Enterprise Security</span></div>
+                <div class="card"><i data-feather="cpu"></i><span>Splunk SOAR (Phantom)</span></div>
+                <div class="card"><i data-feather="cloud"></i><span>AWS</span></div>
+                <div class="card"><i data-feather="layers"></i><span>Terraform</span></div>
+                <div class="card"><i data-feather="link"></i><span>LangChain</span></div>
+                <div class="card"><i data-feather="settings"></i><span>ServiceNow</span></div>
+                <div class="card"><i data-feather="box"></i><span>Docker</span></div>
+                <div class="card"><i data-feather="git-merge"></i><span>GitLab</span></div>
+                <div class="card"><i data-feather="github"></i><span>GitHub</span></div>
+                <div class="card"><i data-feather="eye"></i><span>Crowdstrike</span></div>
+                <div class="card"><i data-feather="shield"></i><span>Venafi</span></div>
+                <div class="card"><i data-feather="git-branch"></i><span>MITRE ATT&CK Framework</span></div>
+            </div>
         </section>
-    </main>
+    </div>
+    <script>
+      feather.replace()
+    </script>
 </body>
 </html>
