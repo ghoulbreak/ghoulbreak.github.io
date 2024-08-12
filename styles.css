@@ -66,10 +66,19 @@ h2 {
     background-color: var(--primary-hover);
 }
 
-.button svg {
+.button .icon {
+    display: flex;
+    align-items: center;
     margin-right: 10px;
+}
+
+.button .icon svg {
     width: 20px;
     height: 20px;
+}
+
+.button .text {
+    font-size: 1rem;
 }
 
 .grid {
